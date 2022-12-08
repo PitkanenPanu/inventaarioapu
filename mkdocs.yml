@@ -1,0 +1,49 @@
+site_name: ExtVentures Inventaariotyökalu projekti
+site_url: https://fi-a2022-ttc2070.pages.labranet.jamk.fi/ht1-AC8409-/inventaarioapu-2022/
+site_description: Project Home Page
+site_author: Lisää tähän joku team nimi
+
+docs_dir: dokumentit
+site_dir: public
+
+
+markdown_extensions:
+    - plantuml_markdown:
+        server: http://plantuml.com/plantuml
+    - toc:
+        baselevel: 1
+    - admonition
+    - tables
+    - sane_lists
+    - codehilite
+    - pymdownx.superfences
+    - pymdownx.critic:
+        mode: view
+    - lightgallery
+
+theme:
+    name: material
+    language: 'en'
+    history_buttons: false
+    article_nav_bottom: false
+    article_nav_top: false
+    custom_dir: overrides
+    palette:
+        scheme: default
+    font:
+        text: 'Lato'
+        code: 'Lato'
+    logo: 'assets/opf-logo-musta-tekstilla.png'
+    features:
+        - instant
+extra_css:
+    - assets/extra.css
+    - https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.3/css/lightgallery.min.css
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.7.3/js/lightgallery-all.js
+    - https://unpkg.com/mermaid@8.6.4/dist/mermaid.min.js
+    - assets/lg.js
+google_analytics: 
+    - 'google-analytics-code'
+    - 'auto'
